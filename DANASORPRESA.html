@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sorpresa para mi novia</title>
+	<style>
+		#heart1 {
+			display: block;
+			font-size: 30px;
+			text-align: center;
+			margin-top: 100px;
+			animation-name: fade;
+			animation-duration: 8s;
+			animation-delay: 0s;
+			animation-fill-mode: forwards;
+		}
+
+		#heart2 {
+			display: none;
+			font-size: 30px;
+			text-align: center;
+			margin-top: 100px;
+			animation-name: fade;
+			animation-duration: 8s;
+			animation-delay: 8s;
+			animation-fill-mode: forwards;
+		}
+
+		#heart3 {
+			display: none;
+			font-size: 30px;
+			text-align: center;
+			margin-top: 100px;
+			animation-name: fade;
+			animation-duration: 8s;
+			animation-delay: 16s;
+			animation-fill-mode: forwards;
+		}
+
+		#heart4 {
+			display: none;
+			font-size: 30px;
+			text-align: center;
+			margin-top: 100px;
+			animation-name: fade;
+			animation-duration: 8s;
+			animation-delay: 24s;
+			animation-fill-mode: forwards;
+		}
+		@keyframes fade {
+			from {
+				opacity: 0;
+			}
+			to {
+				opacity: 1;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div id="heart1">Feliz día a la mejor abogada</div>
+	<div id="heart2">Gracias por estar siempre a mi lado</div>
+	<div id="heart3">Prometo cuidarte y cuidar lo nuestro por siempre</div>
+	<div id="heart4">Te amo y te amaré por siempre amor de mi vida</div>
+	
+	<script>
+		setTimeout(function(){
+			document.getElementById("heart1").style.display = "none";
+			document.getElementById("heart2").style.display = "block";
+		}, 8000);
+
+		setTimeout(function(){
+			document.getElementById("heart2").style.display = "none";
+			document.getElementById("heart3").style.display = "block";
+		}, 16000);
+
+		setTimeout(function(){
+			document.getElementById("heart3").style.display = "none";
+			document.getElementById("heart4").style.display = "block";
+		}, 24000);
+
+		setTimeout(function(){
+			window.open("https://www.youtube.com/watch?v=-ABdp7ty0KE&list=LL&index=13");
+		}, 32000);
+	</script>
+</body>
+</html>
